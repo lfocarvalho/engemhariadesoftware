@@ -1,0 +1,120 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Formulários */
+.formulario-tarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Tarefas */
+.tarefa {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007bff;
+}
+
+.tarefa.concluida {
+    opacity: 0.7;
+    border-color: #28a745;
+}
+
+.data-vencimento {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.acoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.acoes a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.excluir {
+    background: #dc3545;
+    color: white;
+}
+
+.editar {
+    background: #ffc107;
+    color: black;
+}
+
+.status {
+    background: #17a2b8;
+    color: white;
+}
+
+/* Filtros */
+.filtros {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.filtros a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #495057;
+    text-decoration: none;
+}
+
+.filtros a.ativo {
+    background: #007bff;
+    color: white;
+}
+
+/* Mensagem quando não há tarefas */
+.vazio {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+}
